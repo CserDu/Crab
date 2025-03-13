@@ -25,7 +25,7 @@ Crab: A Unified Audio-Visual Scene Understanding Model with Explicit Cooperation
 ## 📰 News
 
 
-<img src="https://github.com/DAMO-NLP-SG/VideoLLaMA2/assets/18526640/b9faf24f-bdd2-4728-9385-acea17ea086d" width="800" />
+<img src="assets/teaser.png" width="800" />
 
 ## 🛠️ Requirements and Installation
 Basic Dependencies:
