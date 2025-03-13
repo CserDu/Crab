@@ -45,18 +45,15 @@ LLM Weights:
 ## 🚀 Main Results
 
 ### Temporal Localization
+** AVE Task **
 <div align="center"><video src="https://private-user-images.githubusercontent.com/72310120/422185203-73aba174-7ee3-419e-b775-afff041bacca.mp4?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDE4NDIzODUsIm5iZiI6MTc0MTg0MjA4NSwicGF0aCI6Ii83MjMxMDEyMC80MjIxODUyMDMtNzNhYmExNzQtN2VlMy00MTllLWI3NzUtYWZmZjA0MWJhY2NhLm1wND9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAzMTMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMzEzVDA1MDEyNVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTU4YTFlMGY4NjIzNzE0YzZlZTlkNzYwMTIxOWFhMDE4MzE5Y2Q4Yjk4Zjk4MzA1NDVhMTRlODg3MTY4NTZlMDEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.KdZSD0DWTXNSeqibES58yi9NC8KSn0O1xkVr-04hIX0" width="800"></div>
-
 label: Male speech, man speaking, [0,8]
-
 Predict: A man is giving a speech from a podium in a classroom. The man speaks from the beginning of the video until the 8th second. So the audible and visible event in the video is <event> Male speech, man speaking </event>, and the time range is <range> 0,8 </range>.
 
-
+** AVVP Task **
 <div align="center"><video src="https://private-user-images.githubusercontent.com/72310120/422185838-473fed2a-b092-450b-a50e-13e3bc471772.mp4?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDE4NDI1NDUsIm5iZiI6MTc0MTg0MjI0NSwicGF0aCI6Ii83MjMxMDEyMC80MjIxODU4MzgtNDczZmVkMmEtYjA5Mi00NTBiLWE1MGUtMTNlM2JjNDcxNzcyLm1wND9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAzMTMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMzEzVDA1MDQwNVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTAyYmY3NzExMjA1MzViOWI1MDAwNDQ5NDBiN2QyNDU5NjNkNzVkZTA3OGQ3NTllZWQ0NjljMmE2NDU4MWVkYjUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.KSgw-89gTiXRINLdIgSm3fxhzlbXzXZWqSWwMKSlA5Q" width="800"></div>
-
 Label: 
 Audio: Chainsaw, [0,10]  Visual: Chainsaw, [0,1],[3,6],[9,10]
-
 Predict: The video shows a man using a chainsaw to cut a tree. The chainsaw is visible and running from the beginning of the video (0 seconds) to the end (10 seconds). Therefore, visual and audio events are: <visual>Chainsaw,(0 10)</visual> and <audio>Chainsaw,(0 10)</audio>
 
 
@@ -68,12 +65,10 @@ Predict: The video shows a man using a chainsaw to cut a tree. The chainsaw is v
 
 ### Spatio-temporal reasoning
 
+** MUSIC-AVQA Task **
 <div align="center"><video src="https://private-user-images.githubusercontent.com/72310120/422186495-bbc445fd-fc97-4db1-88f9-6244c230dbde.mp4?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDE4NDI3MjAsIm5iZiI6MTc0MTg0MjQyMCwicGF0aCI6Ii83MjMxMDEyMC80MjIxODY0OTUtYmJjNDQ1ZmQtZmM5Ny00ZGIxLTg4ZjktNjI0NGMyMzBkYmRlLm1wND9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAzMTMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMzEzVDA1MDcwMFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWU3MmE2NzJkYjdiM2FjZWYyMjk5NjhlNDFlZWJlMjA1NTg3YmEzMTY0NjM2NmM5OTk2ZmM5NmE3ODVhOWU0ZWYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.p5QQb07__JvCNHTVwGJgymlZTYMOLuAewRjaqJ00GEI"></div>
-
 Question: What is the left instrument of the first sounding instrument? 
-
 Answer: saxophone
-
 Pred: In the video, four men are playing musical instruments. The man on the left is playing the saxophone, the man in the middle is playing the double bass, the man on the right is playing the guitar, and the man in the back is playing the drums. At the beginning of the video, the man in the middle starts playing the double bass first, and then the other instruments start playing. So the instrument on the left of the first sounding instrument is the saxophone. So the answer is <answer> saxophone </answer>.
 
 
