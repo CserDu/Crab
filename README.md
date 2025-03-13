@@ -29,28 +29,18 @@ Crab: A Unified Audio-Visual Scene Understanding Model with Explicit Cooperation
 
 ## 🛠️ Requirements and Installation
 Basic Dependencies:
-* Python >= 3.8
-* Pytorch >= 2.2.0
-* CUDA Version >= 11.8
-* transformers == 4.40.0 (for reproducing paper results)
-* tokenizers == 0.19.1
+* Python == 3.9
+* Pytorch == 2.1.0
+* transformers == 4.37.2
+* deepspeed == 0.12.6
 
-**[Online Mode]** Install required packages (better for development):
+** Install required packages:
 ```bash
 git clone https://github.com/DAMO-NLP-SG/VideoLLaMA2
 cd VideoLLaMA2
 pip install -r requirements.txt
-pip install flash-attn==2.5.8 --no-build-isolation
 ```
 
-**[Offline Mode]** Install VideoLLaMA2 as a Python package (better for direct use):
-```bash
-git clone https://github.com/DAMO-NLP-SG/VideoLLaMA2
-cd VideoLLaMA2
-pip install --upgrade pip  # enable PEP 660 support
-pip install -e .
-pip install flash-attn==2.5.8 --no-build-isolation
-```
 
 ## 🚀 Main Results
 
