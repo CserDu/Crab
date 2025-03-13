@@ -3,19 +3,13 @@
 <p>
 
 <h3 align="center"><a href="https://arxiv.org/abs/2406.07476" style="color:#9C276A">
-Crab: A Unified Audio-Visual Scene Understanding Model with Explicit Cooperation</a></h3>
+Crab: A Unified Audio-Visual Scene Understanding Model with Explicit Cooperation (CVPR'25)</a></h3>
 <h5 align="center"> If our project helps you, please give us a star ⭐ on GitHub to support us. 🙏🙏 </h2>
 
 <h5 align="center">
 
 
 [![hf_checkpoint](https://img.shields.io/badge/🤗-Checkpoints-9C276A.svg)](https://huggingface.co/ahsgdxhs/Crab) [![hf_data](https://img.shields.io/badge/🤗-MSVC-9C276A.svg)](https://huggingface.co/datasets/ahsgdxhs/AVUIE) [![arXiv](https://img.shields.io/badge/Arxiv-2406.07476-AD1C18.svg?logo=arXiv)](https://arxiv.org/abs/2406.07476) <br>
-
-</h5>
-
-
-## 📰 News
-
 
 <img src="assets/teaser.png" width="800" />
 
