@@ -45,6 +45,9 @@ LLM Weights:
 ## 🚀 Main Results
 
 ### Temporal Localization
+<div align="center"><video src="assets/-en7GAdXAQk.mp4" width="800"></div>
+**label**: Male speech, man speaking, [0,8]
+**Predict**: A man is giving a speech from a podium in a classroom. The man speaks from the beginning of the video until the 8th second. So the audible and visible event in the video is <event> Male speech, man speaking </event>, and the time range is <range> 0,8 </range>.
 
 
 
