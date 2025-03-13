@@ -45,7 +45,7 @@ LLM Weights:
 ## 🚀 Main Results
 
 ### Temporal Localization
-<div align="center"><video src="[assets/-en7GAdXAQk.mp4](https://github.com/CserDu/Crab/blob/main/assets/-en7GAdXAQk.mp4)" width="800"></div>
+<div align="center"><video src="https://private-user-images.githubusercontent.com/72310120/422185203-73aba174-7ee3-419e-b775-afff041bacca.mp4?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDE4NDIzODUsIm5iZiI6MTc0MTg0MjA4NSwicGF0aCI6Ii83MjMxMDEyMC80MjIxODUyMDMtNzNhYmExNzQtN2VlMy00MTllLWI3NzUtYWZmZjA0MWJhY2NhLm1wND9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAzMTMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMzEzVDA1MDEyNVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTU4YTFlMGY4NjIzNzE0YzZlZTlkNzYwMTIxOWFhMDE4MzE5Y2Q4Yjk4Zjk4MzA1NDVhMTRlODg3MTY4NTZlMDEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.KdZSD0DWTXNSeqibES58yi9NC8KSn0O1xkVr-04hIX0" width="800"></div>
 
 label: Male speech, man speaking, [0,8]
 
