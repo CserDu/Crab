@@ -18,30 +18,6 @@ Crab: A Unified Audio-Visual Scene Understanding Model with Explicit Cooperation
 
 
 
-
-## 🛠️ Requirements and Installation
-Basic Dependencies:
-* Python == 3.9
-* Pytorch == 2.1.0
-* transformers == 4.37.2
-* deepspeed == 0.12.6
-
-Install required packages:
-```bash
-git clone https://github.com/CserDu/Crab
-cd Crab
-pip install -r requirements.txt
-```
-
-Multi-modal Encoder Weights:
-- download visual encoder [openai-clip-vit-large-patch14](https://huggingface.co/openai/clip-vit-large-patch14)
-- download audio encoder [Fine-tuned BEATs_iter3+ (AS2M)](https://github.com/microsoft/unilm/blob/master/beats/README.md)
-
-LLM Weights:
-- download [LLaMA-2-Chat-HF](https://huggingface.co/meta-llama/Llama-2-7b-chat-hf)
-
-
-
 ## 🚀 Main Results
 
 ### Temporal Localization
@@ -72,6 +48,29 @@ Pred: In the video, four men are playing musical instruments. The man on the lef
 
 ### Spatial Localization & Pixel-level understanding
 <div align="center"><img src="assets/arig+avs.png"> </div>
+
+
+## 🛠️ Requirements and Installation
+Basic Dependencies:
+* Python == 3.9
+* Pytorch == 2.1.0
+* transformers == 4.37.2
+* deepspeed == 0.12.6
+
+Install required packages:
+```bash
+git clone https://github.com/CserDu/Crab
+cd Crab
+pip install -r requirements.txt
+```
+
+Multi-modal Encoder Weights:
+- download visual encoder [openai-clip-vit-large-patch14](https://huggingface.co/openai/clip-vit-large-patch14)
+- download audio encoder [Fine-tuned BEATs_iter3+ (AS2M)](https://github.com/microsoft/unilm/blob/master/beats/README.md)
+
+LLM Weights:
+- download [LLaMA-2-Chat-HF](https://huggingface.co/meta-llama/Llama-2-7b-chat-hf)
+
 
 
 ## 🚀 Quick Start
