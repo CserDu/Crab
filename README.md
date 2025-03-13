@@ -3,7 +3,7 @@
 <p>
 
 <h3 align="center"><a href="https://arxiv.org/abs/2406.07476" style="color:#9C276A">
-VideoLLaMA 2: Advancing Spatial-Temporal Modeling and Audio Understanding in Video-LLMs</a></h3>
+Crab: A Unified Audio-Visual Scene Understanding Model with Explicit Cooperation</a></h3>
 <h5 align="center"> If our project helps you, please give us a star ⭐ on GitHub to support us. 🙏🙏 </h2>
 
 <h5 align="center">
@@ -21,51 +21,8 @@ VideoLLaMA 2: Advancing Spatial-Temporal Modeling and Audio Understanding in Vid
 
 </h5>
 
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/videollama-2-advancing-spatial-temporal/zero-shot-video-question-answer-on-egoschema-1)](https://paperswithcode.com/sota/zero-shot-video-question-answer-on-egoschema-1?p=videollama-2-advancing-spatial-temporal) <br>
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/videollama-2-advancing-spatial-temporal/video-question-answering-on-perception-test)](https://paperswithcode.com/sota/video-question-answering-on-perception-test?p=videollama-2-advancing-spatial-temporal) <br>
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/videollama-2-advancing-spatial-temporal/video-question-answering-on-mvbench)](https://paperswithcode.com/sota/video-question-answering-on-mvbench?p=videollama-2-advancing-spatial-temporal) <br>
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/videollama-2-advancing-spatial-temporal/zero-shot-video-question-answer-on-video-mme-1)](https://paperswithcode.com/sota/zero-shot-video-question-answer-on-video-mme-1?p=videollama-2-advancing-spatial-temporal) <br>
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/videollama-2-advancing-spatial-temporal/zero-shot-video-question-answer-on-video-mme)](https://paperswithcode.com/sota/zero-shot-video-question-answer-on-video-mme?p=videollama-2-advancing-spatial-temporal) <br>
-
-<details open><summary>💡 Some other multimodal-LLM projects from our team may interest you ✨. </summary><p>
-<!--  may -->
-
-> [**VideoLLaMA 3: Frontier Multimodal Foundation Models for Image and Video Understanding**](https://github.com/DAMO-NLP-SG/VideoLLaMA3) <br>
-> Boqiang Zhang<sup>* </sup>, Kehan Li<sup>* </sup>, Zesen Cheng<sup>* </sup>, Zhiqiang Hu<sup>* </sup>, Yuqian Yuan<sup>* </sup>, Guanzheng Chen<sup>* </sup>, Sicong Leng<sup>* </sup>, Yuming Jiang<sup>* </sup>, Hang Zhang<sup>* </sup>, Xin Li<sup>* </sup>, Peng Jin, Wenqi Zhang, Fan Wang, Lidong Bing, Deli Zhao <br>
-[![github](https://img.shields.io/badge/-Github-black?logo=github)](https://github.com/DAMO-NLP-SG/VideoLLaMA3)  [![github](https://img.shields.io/github/stars/DAMO-NLP-SG/VideoLLaMA3.svg?style=social)](https://github.com/DAMO-NLP-SG/VideoLLaMA3) [![arXiv](https://img.shields.io/badge/Arxiv-2501.13106-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2501.13106) <br>
-
-> [**Video-LLaMA: An Instruction-tuned Audio-Visual Language Model for Video Understanding**](https://github.com/DAMO-NLP-SG/Video-LLaMA) <br>
-> Hang Zhang, Xin Li, Lidong Bing <br>
-[![github](https://img.shields.io/badge/-Github-black?logo=github)](https://github.com/DAMO-NLP-SG/Video-LLaMA)  [![github](https://img.shields.io/github/stars/DAMO-NLP-SG/Video-LLaMA.svg?style=social)](https://github.com/DAMO-NLP-SG/Video-LLaMA) [![arXiv](https://img.shields.io/badge/Arxiv-2306.02858-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2306.02858) <br>
-
-> [**VCD: Mitigating Object Hallucinations in Large Vision-Language Models through Visual Contrastive Decoding**](https://arxiv.org/abs/2311.16922) <br>
-> Sicong Leng<sup>* </sup>, Hang Zhang<sup>* </sup>, Guanzheng Chen, Xin Li, Shijian Lu, Chunyan Miao, Lidong Bing <br>
-[![github](https://img.shields.io/badge/-Github-black?logo=github)](https://github.com/DAMO-NLP-SG/VCD)  [![github](https://img.shields.io/github/stars/DAMO-NLP-SG/VCD.svg?style=social)](https://github.com/DAMO-NLP-SG/VCD)  [![arXiv](https://img.shields.io/badge/Arxiv-2311.16922-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2311.16922) <br>
-
-> [**The Curse of Multi-Modalities: Evaluating Hallucinations of Large Multimodal Models across Language, Visual, and Audio**](https://arxiv.org/abs/2410.12787) <br>
-> Sicong Leng, Yun Xing, Zesen Cheng, Yang Zhou, Hang Zhang, Xin Li, Deli Zhao, Shijian Lu, Chunyan Miao, Lidong Bing <br>
-[![github](https://img.shields.io/badge/-Github-black?logo=github)](https://github.com/DAMO-NLP-SG/CMM)  [![github](https://img.shields.io/github/stars/DAMO-NLP-SG/CMM.svg?style=social)](https://github.com/DAMO-NLP-SG/CMM)  [![arXiv](https://img.shields.io/badge/Arxiv-2410.12787-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2410.12787) <br>
-
-> [**Breaking the Memory Barrier: Near Infinite Batch Size Scaling for Contrastive Loss**](https://arxiv.org/abs/2410.17243) <br>
-> Zesen Cheng*, Hang Zhang*, Kehan Li*, Sicong Leng, Zhiqiang Hu, Fei Wu, Deli Zhao, Xin Li, Lidong Bing <br>
-[![github](https://img.shields.io/badge/-Github-black?logo=github)](https://github.com/DAMO-NLP-SG/Inf-CLIP)  [![github](https://img.shields.io/github/stars/DAMO-NLP-SG/Inf-CLIP.svg?style=social)](https://github.com/DAMO-NLP-SG/Inf-CLIP)  [![arXiv](https://img.shields.io/badge/Arxiv-2410.17243-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2410.17243) <br>
-
-</p></details>
-
-<div align="center"><video src="https://github.com/DAMO-NLP-SG/VideoLLaMA2/assets/18526640/e0e7951c-f392-42ed-afad-b2c7984d3e38" width="800"></div>
-
 
 ## 📰 News
-* **[2025.01.21]** 🚀🚀 We are excited to officially launch [VideoLLaMA3](https://github.com/DAMO-NLP-SG/VideoLLaMA3), featuring enhanced performance across image and video benchmarks, along with a variety of easy-to-follow inference cookbooks. Try it out today! 
-* **[2024.10.22]**  Release checkpoints of [VideoLLaMA2.1-7B-AV](https://huggingface.co/DAMO-NLP-SG/VideoLLaMA2.1-7B-AV). The audio_visual branch code can be seen here: https://github.com/DAMO-NLP-SG/VideoLLaMA2/tree/audio_visual.
-* **[2024.10.15]**  Release checkpoints of [VideoLLaMA2.1-7B-16F-Base](https://huggingface.co/DAMO-NLP-SG/VideoLLaMA2.1-7B-16F-Base) and [VideoLLaMA2.1-7B-16F](https://huggingface.co/DAMO-NLP-SG/VideoLLaMA2.1-7B-16F).
-* **[2024.08.14]**  Release checkpoints of [VideoLLaMA2-72B-Base](https://huggingface.co/DAMO-NLP-SG/VideoLLaMA2-72B-Base) and [VideoLLaMA2-72B](https://huggingface.co/DAMO-NLP-SG/VideoLLaMA2-72B).
-* **[2024.07.30]**  Release checkpoints of [VideoLLaMA2-8x7B-Base](https://huggingface.co/DAMO-NLP-SG/VideoLLaMA2-8x7B-Base) and [VideoLLaMA2-8x7B](https://huggingface.co/DAMO-NLP-SG/VideoLLaMA2-8x7B).
-* **[2024.06.25]**  🔥🔥 As of Jun 25, our [VideoLLaMA2-7B-16F](https://huggingface.co/DAMO-NLP-SG/VideoLLaMA2-7B-16F) is the **Top-1** ~7B-sized VideoLLM on the [MLVU Leaderboard](https://github.com/JUNJIE99/MLVU?tab=readme-ov-file#trophy-mini-leaderboard).
-* **[2024.06.18]**  🔥🔥 As of Jun 18, our [VideoLLaMA2-7B-16F](https://huggingface.co/DAMO-NLP-SG/VideoLLaMA2-7B-16F) is the **Top-1** ~7B-sized VideoLLM on the [VideoMME Leaderboard](https://video-mme.github.io/home_page.html#leaderboard).
-* **[2024.06.17]**  👋👋 Update technical report with the latest results and the missing references. If you have works closely related to VideoLLaMA 2 but not mentioned in the paper, feel free to let us know.  
-* **[2024.06.14]**  🔥🔥 [Online Demo](https://huggingface.co/spaces/lixin4ever/VideoLLaMA2) is available.
-* **[2024.06.03]**  Release training, evaluation, and serving codes of VideoLLaMA 2.
 
 
 <img src="https://github.com/DAMO-NLP-SG/VideoLLaMA2/assets/18526640/b9faf24f-bdd2-4728-9385-acea17ea086d" width="800" />
