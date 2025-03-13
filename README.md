@@ -37,8 +37,11 @@ Multi-modal Encoder Weights:
 - download visual encoder [openai-clip-vit-large-patch14](https://huggingface.co/openai/clip-vit-large-patch14)
 - download audio encoder [Fine-tuned BEATs_iter3+ (AS2M)](https://github.com/microsoft/unilm/blob/master/beats/README.md)
 
+LLM Weights:
+- download [LLaMA-2-Chat-HF](https://huggingface.co/meta-llama/Llama-2-7b-chat-hf)
+
+
 ## 🚀 Quick Start
-1. Download [LLaMA-2-Chat-HF](https://huggingface.co/meta-llama/Llama-2-7b-chat-hf) checkpoint in directory `pretrain_model_name_or_path`;
 1. Download [finetune weights](https://huggingface.co/ahsgdxhs/Crab) in directory `ckpt_dir`;
 2. Command:
 ```python
