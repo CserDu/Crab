@@ -34,10 +34,10 @@ Basic Dependencies:
 * transformers == 4.37.2
 * deepspeed == 0.12.6
 
-** Install required packages:
+Install required packages:
 ```bash
-git clone https://github.com/DAMO-NLP-SG/VideoLLaMA2
-cd VideoLLaMA2
+git clone https://github.com/CserDu/Crab
+cd Crab
 pip install -r requirements.txt
 ```
 
