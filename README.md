@@ -34,207 +34,21 @@ pip install -r requirements.txt
 ```
 
 
-## 🚀 Main Results
-
-### Multi-Choice Video QA & Video Captioning
-<p><img src="https://github.com/user-attachments/assets/e87fe4cf-07ea-4fde-998b-a0c63671c3b4" width="800" "/></p>
-
-###  Open-Ended Video QA
-<p><img src="https://github.com/user-attachments/assets/80b16c04-75ac-43b8-bc22-6952fdf994bb" width="800" "/></p>
-
-### Audio QA 
-<p><img src="https://github.com/user-attachments/assets/46e55952-5a54-4564-bcd4-cfa4edd7f36a" width="800" "/></p>
-
-### Audio-Visual QA 
-<p><img src="https://github.com/user-attachments/assets/8114c1e3-7f93-401b-9ea6-9ce7c96d7b05" width="800" "/></p>
-
-
-## :earth_americas: Model Zoo
-### Vision-only Checkpoints
-| Model Name     | Model Type | Visual Encoder | Language Decoder | # Training Frames |
-|:----------------|:------------:|:----------------|:------------------|:----------------:|
-| [VideoLLaMA2-7B-Base](https://huggingface.co/DAMO-NLP-SG/VideoLLaMA2-7B-Base)  | Base  | [clip-vit-large-patch14-336](https://huggingface.co/openai/clip-vit-large-patch14-336) | [Mistral-7B-Instruct-v0.2](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2)  | 8 |
-| [VideoLLaMA2-7B](https://huggingface.co/DAMO-NLP-SG/VideoLLaMA2-7B)  | Chat | [clip-vit-large-patch14-336](https://huggingface.co/openai/clip-vit-large-patch14-336) | [Mistral-7B-Instruct-v0.2](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2)  | 8 |
-| [VideoLLaMA2-7B-16F-Base](https://huggingface.co/DAMO-NLP-SG/VideoLLaMA2-7B-16F-Base)  | Base  | [clip-vit-large-patch14-336](https://huggingface.co/openai/clip-vit-large-patch14-336) | [Mistral-7B-Instruct-v0.2](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2)  | 16 |
-| [VideoLLaMA2-7B-16F](https://huggingface.co/DAMO-NLP-SG/VideoLLaMA2-7B-16F)  | Chat | [clip-vit-large-patch14-336](https://huggingface.co/openai/clip-vit-large-patch14-336) | [Mistral-7B-Instruct-v0.2](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2)  | 16 |
-| [VideoLLaMA2-8x7B-Base](https://huggingface.co/DAMO-NLP-SG/VideoLLaMA2-8x7B-Base)  | Base | [clip-vit-large-patch14-336](https://huggingface.co/openai/clip-vit-large-patch14-336) | [Mixtral-8x7B-Instruct-v0.1](https://huggingface.co/mistralai/Mixtral-8x7B-Instruct-v0.1)  | 8 |
-| [VideoLLaMA2-8x7B](https://huggingface.co/DAMO-NLP-SG/VideoLLaMA2-8x7B)  | Chat | [clip-vit-large-patch14-336](https://huggingface.co/openai/clip-vit-large-patch14-336) | [Mixtral-8x7B-Instruct-v0.1](https://huggingface.co/mistralai/Mixtral-8x7B-Instruct-v0.1)  | 8 |
-| [VideoLLaMA2-72B-Base](https://huggingface.co/DAMO-NLP-SG/VideoLLaMA2-72B-Base)  | Base | [clip-vit-large-patch14-336](https://huggingface.co/openai/clip-vit-large-patch14-336) | [Qwen2-72B-Instruct](https://huggingface.co/Qwen/Qwen2-72B-Instruct)  | 8 |
-| [VideoLLaMA2-72B](https://huggingface.co/DAMO-NLP-SG/VideoLLaMA2-72B)  | Chat | [clip-vit-large-patch14-336](https://huggingface.co/openai/clip-vit-large-patch14-336) | [Qwen2-72B-Instruct](https://huggingface.co/Qwen/Qwen2-72B-Instruct)  | 8 |
-| [VideoLLaMA2.1-7B-16F-Base](https://huggingface.co/DAMO-NLP-SG/VideoLLaMA2.1-7B-16F-Base) | Base | [siglip-so400m-patch14-384](https://huggingface.co/google/siglip-so400m-patch14-384) | [Qwen2-7B-Instruct](https://huggingface.co/Qwen/Qwen2-7B-Instruct)  | 16 |
-| [VideoLLaMA2.1-7B-16F](https://huggingface.co/DAMO-NLP-SG/VideoLLaMA2.1-7B-16F)  | Chat | [siglip-so400m-patch14-384](https://huggingface.co/google/siglip-so400m-patch14-384) | [Qwen2-7B-Instruct](https://huggingface.co/Qwen/Qwen2-7B-Instruct)  | 16 |
-
-
-### Audio-Visual Checkpoints
-| Model Name     | Type | Audio Encoder | Language Decoder |
-|:-------------------|:----------------|:----------------|:------------------|
-| [VideoLLaMA2.1-7B-AV](https://huggingface.co/DAMO-NLP-SG/VideoLLaMA2.1-7B-AV)  | Chat | [Fine-tuned BEATs_iter3+(AS2M)(cpt2)](https://1drv.ms/u/s!AqeByhGUtINrgcpj8ujXH1YUtxooEg?e=E9Ncea) | [VideoLLaMA2.1-7B-16F](https://huggingface.co/DAMO-NLP-SG/VideoLLaMA2.1-7B-16F)  |
-
-
-
-## [🤗 Demo](https://huggingface.co/spaces/lixin4ever/VideoLLaMA2)
-
-It is highly recommended to try our [online demo](https://huggingface.co/spaces/lixin4ever/VideoLLaMA2) first.
-
-To run a video-based LLM (Large Language Model) web demonstration on your device, you will first need to ensure that you have the necessary model checkpoints prepared, followed by adhering to the steps outlined to successfully launch the demo.
-
-### Single-model Version
-
-* Launch a gradio app directly ([VideoLLaMA2-7B](https://huggingface.co/DAMO-NLP-SG/VideoLLaMA2-7B) is adopted by default):
-```bash
-python videollama2/serve/gradio_web_server_adhoc.py
-```
-
-### Multiple-model Version
-
-1. Launch a global controller
-```bash
-cd /path/to/VideoLLaMA2
-python -m videollama2.serve.controller --host 0.0.0.0 --port 10000
-```
-
-2. Launch a gradio webserver
-```bash
-python -m videollama2.serve.gradio_web_server --controller http://localhost:10000 --model-list-mode reload
-```
-
-3. Launch one or multiple model workers
-```bash
-#  export HF_ENDPOINT=https://hf-mirror.com  # If you are unable to access Hugging Face, try to uncomment this line.
-python -m videollama2.serve.model_worker --host 0.0.0.0 --controller http://localhost:10000 --port 40000 --worker http://localhost:40000 --model-path /PATH/TO/MODEL1
-python -m videollama2.serve.model_worker --host 0.0.0.0 --controller http://localhost:10000 --port 40001 --worker http://localhost:40001 --model-path /PATH/TO/MODEL2
-python -m videollama2.serve.model_worker --host 0.0.0.0 --controller http://localhost:10000 --port 40002 --worker http://localhost:40002 --model-path /PATH/TO/MODEL3
-...
-```
-
-
-## 🗝️ Training & Evaluation
-
-### Quick Start
-
-To facilitate further development on top of our codebase, we provide a quick-start guide on how to train a customized [VideoLLaMA2](https://github.com/DAMO-NLP-SG/VideoLLaMA2) with [VideoLLaVA](https://github.com/PKU-YuanGroup/Video-LLaVA) dataset and evaluate the trained model on the mainstream video-llm benchmarks.
-
-1. Training Data Structure:
-```bash
-VideoLLaMA2
-├── datasets
-│   ├── videollava_pt
-|   |   ├── llava_image/ # Available at: https://pan.baidu.com/s/17GYcE69FcJjjUM0e4Gad2w?pwd=9ga3 or https://drive.google.com/drive/folders/1QmFj2FcMAoWNCUyiUtdcW0-IOhLbOBcf?usp=drive_link
-|   |   ├── valley/      # Available at: https://pan.baidu.com/s/1jluOimE7mmihEBfnpwwCew?pwd=jyjz or https://drive.google.com/drive/folders/1QmFj2FcMAoWNCUyiUtdcW0-IOhLbOBcf?usp=drive_link
-|   |   └── valley_llavaimage.json # Available at: https://drive.google.com/file/d/1zGRyVSUMoczGq6cjQFmT0prH67bu2wXD/view, including 703K video-text and 558K image-text pairs
-│   ├── videollava_sft
-|   |   ├── llava_image_tune/  # Available at: https://pan.baidu.com/s/1l-jT6t_DlN5DTklwArsqGw?pwd=o6ko
-|   |   ├── videochatgpt_tune/ # Available at: https://pan.baidu.com/s/10hJ_U7wVmYTUo75YHc_n8g?pwd=g1hf
-|   |   └── videochatgpt_llavaimage_tune.json # Available at: https://drive.google.com/file/d/1zGRyVSUMoczGq6cjQFmT0prH67bu2wXD/view, including 100K video-centric, 625K image-centric and 40K text-only conversations
-```
+## 🚀 Quick Start
+1. Download [finetune weights](https://huggingface.co/ahsgdxhs/Crab)
 2. Command:
 ```bash
-# VideoLLaMA2-vllava pretraining
-bash scripts/vllava/pretrain.sh
-# VideoLLaMA2-vllava finetuning
-bash scripts/vllava/finetune.sh
-```
-3. Evaluation Data Structure:
+bash scripts/finetune/inference_hyper_lora.sh
+``` 
+
+
+## 🗝️ Training
+1. Downlod [AVUIE dataset annotations](https://huggingface.co/datasets/ahsgdxhs/AVUIE) and raw videos from [AVE](https://github.com/YapengTian/AVE-ECCV18), [AVVP](https://github.com/YapengTian/AVVP-ECCV20), [AVS](https://github.com/OpenNLPLab/AVSBench), [Ref-AVS](https://github.com/GeWu-Lab/Ref-AVS), [MUSIC-AVQA](https://github.com/GeWu-Lab/MUSIC-AVQA), [VALOR](https://github.com/TXH-mercury/VALOR)
+2. command:
 ```bash
-VideoLLaMA2
-├── eval
-│   ├── egoschema # Official website: https://github.com/egoschema/EgoSchema
-|   |   ├── good_clips_git/ # Available at: https://drive.google.com/drive/folders/1SS0VVz8rML1e5gWq7D7VtP1oxE2UtmhQ
-|   |   └── questions.json  # Available at: https://github.com/egoschema/EgoSchema/blob/main/questions.json
-│   ├── mvbench # Official website: https://huggingface.co/datasets/OpenGVLab/MVBench
-|   |   ├── video/
-|   |   |   ├── clever/
-|   |   |   └── ...
-|   |   └── json/
-|   |   |   ├── action_antonym.json
-|   |   |   └── ...
-│   ├── perception_test_mcqa # Official website: https://huggingface.co/datasets/OpenGVLab/MVBench
-|   |   ├── videos/ # Available at: https://storage.googleapis.com/dm-perception-test/zip_data/test_videos.zip
-|   |   └── mc_question_test.json # Download from https://storage.googleapis.com/dm-perception-test/zip_data/mc_question_test_annotations.zip
-│   ├── videomme # Official website: https://video-mme.github.io/home_page.html#leaderboard
-|   |   ├── test-00000-of-00001.parquet
-|   |   ├── videos/
-|   |   └── subtitles/
-│   ├── Activitynet_Zero_Shot_QA # Official website: https://github.com/MILVLG/activitynet-qa
-|   |   ├── all_test/   # Available at: https://mbzuaiac-my.sharepoint.com/:u:/g/personal/hanoona_bangalath_mbzuai_ac_ae/EatOpE7j68tLm2XAd0u6b8ABGGdVAwLMN6rqlDGM_DwhVA?e=90WIuW
-|   |   ├── test_q.json # Available at: https://github.com/MILVLG/activitynet-qa/tree/master/dataset
-|   |   └── test_a.json # Available at: https://github.com/MILVLG/activitynet-qa/tree/master/dataset
-│   ├── MSVD_Zero_Shot_QA # Official website: https://github.com/xudejing/video-question-answering
-|   |   ├── videos/     
-|   |   ├── test_q.json 
-|   |   └── test_a.json
-│   ├── videochatgpt_gen # Official website: https://github.com/mbzuai-oryx/Video-ChatGPT/tree/main/quantitative_evaluation
-|   |   ├── Test_Videos/ # Available at: https://mbzuaiac-my.sharepoint.com/:u:/g/personal/hanoona_bangalath_mbzuai_ac_ae/EatOpE7j68tLm2XAd0u6b8ABGGdVAwLMN6rqlDGM_DwhVA?e=90WIuW
-|   |   ├── Test_Human_Annotated_Captions/ # Available at: https://mbzuaiac-my.sharepoint.com/personal/hanoona_bangalath_mbzuai_ac_ae/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fhanoona%5Fbangalath%5Fmbzuai%5Fac%5Fae%2FDocuments%2FVideo%2DChatGPT%2FData%5FCode%5FModel%5FRelease%2FQuantitative%5FEvaluation%2Fbenchamarking%2FTest%5FHuman%5FAnnotated%5FCaptions%2Ezip&parent=%2Fpersonal%2Fhanoona%5Fbangalath%5Fmbzuai%5Fac%5Fae%2FDocuments%2FVideo%2DChatGPT%2FData%5FCode%5FModel%5FRelease%2FQuantitative%5FEvaluation%2Fbenchamarking&ga=1
-|   |   ├── generic_qa.json     # These three json files available at: https://mbzuaiac-my.sharepoint.com/personal/hanoona_bangalath_mbzuai_ac_ae/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fhanoona%5Fbangalath%5Fmbzuai%5Fac%5Fae%2FDocuments%2FVideo%2DChatGPT%2FData%5FCode%5FModel%5FRelease%2FQuantitative%5FEvaluation%2Fbenchamarking%2FBenchmarking%5FQA&ga=1
-|   |   ├── temporal_qa.json
-|   |   └── consistency_qa.json
-```
-4. Command:
-```bash
-# mvbench evaluation
-CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 bash scripts/eval/eval_video_qa_mvbench.sh
-# activitynet-qa evaluation (need to set azure openai key/endpoint/deployname)
-CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 bash scripts/eval/eval_video_qa_mvbench.sh
+bash scripts/finetune/finetun_hyper_lora.sh
 ```
 
-### Data Format
-
-If you want to train a video-llm on your data, you need to follow the procedures below to prepare the video/image sft data:
-
-1. Suppose your data structure is like:
-```bash
-VideoLLaMA2
-├── datasets
-│   ├── custom_sft
-│   |   ├── images
-│   |   ├── videos
-|   |   └── custom.json
-```
-2. Then you should re-organize the annotated video/image sft data according to the following format:
-```json
-[
-    {
-        "id": 0,
-        "video": "images/xxx.jpg",
-        "conversations": [
-            {
-                "from": "human",
-                "value": "<image>\nWhat are the colors of the bus in the image?"
-            },
-            {
-                "from": "gpt",
-                "value": "The bus in the image is white and red."
-            },
-            ...
-        ],
-    }
-    {
-        "id": 1,
-        "video": "videos/xxx.mp4",
-        "conversations": [
-            {
-                "from": "human",
-                "value": "<video>\nWhat are the main activities that take place in the video?"
-            },
-            {
-                "from": "gpt",
-                "value": "The main activities that take place in the video are the preparation of camera equipment by a man, a group of men riding a helicopter, and a man sailing a boat through the water."
-            },
-            ...
-        ],
-    },
-    ...
-]
-```
-3. Modify the `scripts/custom/finetune.sh`:
-```bash
-...
---data_path datasets/custom_sft/custom.json
---data_folder datasets/custom_sft/
---pretrain_mm_mlp_adapter CONNECTOR_DOWNLOAD_PATH (e.g., DAMO-NLP-SG/VideoLLaMA2.1-7B-16F-Base)
-...
-```
 
 ## 🤖 Inference
 
