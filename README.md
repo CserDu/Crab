@@ -1,9 +1,14 @@
+
+<h2 align="center"><a href="https://arxiv.org/abs/2406.07476" style="color:#9C276A">
+Crab: A Unified Audio-Visual Scene Understanding Model with Explicit Cooperation</a> (CVPR'25)</h2>
+
 <p align="center">
     <img src="assets/crab.jpeg" width="150" style="margin-bottom: 0.2;"/>
 <p>
 
-<h3 align="center"><a href="https://arxiv.org/abs/2406.07476" style="color:#9C276A">
-Crab: A Unified Audio-Visual Scene Understanding Model with Explicit Cooperation</a> (CVPR'25)</h3>
+
+🚀🚀 Welcome to the repo of **Crab**!
+
 <h5 align="center"> If our project helps you, please give us a star ⭐ on GitHub to support us. 🙏🙏 </h2>
 
 
@@ -14,10 +19,7 @@ Crab: A Unified Audio-Visual Scene Understanding Model with Explicit Cooperation
 
 <img src="assets/teaser.png" width="800" />
 
-🚀🚀 Welcome to the repo of **SALMONN**!
 
-
-Crab is a unified audio-visual scene understanding model with explicit cooperation, which can complete various audio-visual tasks. It is trained on an instruction-tuning dataset with explicit reasoning process, which clarifies the cooperative relationship among tasks. Furthermore, to alleviate the interference caused by the learning process of complex audiovisual data and facilitate concrete cooperation, an interaction-aware LoRA structure is designed to enable the model focus on different aspects of data interaction.
 
 
 ## 🛠️ Requirements and Installation
@@ -36,7 +38,7 @@ pip install -r requirements.txt
 
 Multi-modal Encoder Weights:
 - download visual encoder [openai-clip-vit-large-patch14](https://huggingface.co/openai/clip-vit-large-patch14)
-- download audio encoder []
+- download audio encoder [Fine-tuned BEATs_iter3+ (AS2M)](https://github.com/microsoft/unilm/blob/master/beats/README.md)
 
 ## 🚀 Quick Start
 1. Download [LLaMA-2-Chat-HF](https://huggingface.co/meta-llama/Llama-2-7b-chat-hf) checkpoint in directory `pretrain_model_name_or_path`;
