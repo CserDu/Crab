@@ -177,16 +177,26 @@ inference_avqa(model,audio_path,video_path,image_processor,tokenizer,question)
 
 ## 🗝️ Training
 1. Download [audio pretrain checkpoint](https://huggingface.co/ahsgdxhs/Crab/resolve/main/audio_pretrain.bin), [visual pretrain checkpoint](), [segmentation pretrain checkpoint]() in `prtrain_ckpt_dir`
-1. Download [AVUIE dataset annotations](https://huggingface.co/datasets/ahsgdxhs/AVUIE) and raw data from [AVE](https://github.com/YapengTian/AVE-ECCV18), [AVVP](https://github.com/YapengTian/AVVP-ECCV20), [AVS](https://github.com/OpenNLPLab/AVSBench), [Ref-AVS](https://github.com/GeWu-Lab/Ref-AVS), [MUSIC-AVQA](https://github.com/GeWu-Lab/MUSIC-AVQA), [VALOR](https://github.com/TXH-mercury/VALOR)
-2. Run:
+2. Download [AVUIE dataset annotations](https://huggingface.co/datasets/ahsgdxhs/AVUIE) and raw data from [AVE](https://github.com/YapengTian/AVE-ECCV18), [AVVP](https://github.com/YapengTian/AVVP-ECCV20), [AVS](https://github.com/OpenNLPLab/AVSBench), [Ref-AVS](https://github.com/GeWu-Lab/Ref-AVS), [MUSIC-AVQA](https://github.com/GeWu-Lab/MUSIC-AVQA), [VALOR](https://github.com/TXH-mercury/VALOR)
+3. Jointly training all tasks:
 ```bash
 bash scripts/finetune/finetun_hyper_lora.sh
 ```
+4. Jointly training AVS
+```bash
+bash scripts/finetune/finetune_hyper_lora_avs.sh
+``` 
 
 
 ## 🤖 Inference
+inference AVE, AVVP, ARIG, AVQA
 ```bash
 bash scripts/finetune/inference_hyper_lora.sh
+```
+
+infernce AVS:
+```bash
+bash scripts/finetune/inference_hyperlora_avs.sh
 ```
 
 
