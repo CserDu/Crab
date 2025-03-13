@@ -4,7 +4,8 @@
 
 
 <h3 align="center"> (CVPR'25) <a href="https://arxiv.org/abs/2406.07476" style="color:#9C276A">
-Crab: A Unified Audio-Visual Scene Understanding Model with Explicit Cooperation</a></h3>
+Crab: A Unified Audio-Visual Scene Understanding Model 
+    with Explicit Cooperation</a></h3>
 
 
 <h5 align="center"> 🚀🚀 Welcome to the repo of Crab! If our project helps you, please give us a star ⭐ on GitHub to support us. 🙏🙏 </h2>
