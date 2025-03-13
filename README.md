@@ -52,6 +52,14 @@ label: Male speech, man speaking, [0,8]
 Predict: A man is giving a speech from a podium in a classroom. The man speaks from the beginning of the video until the 8th second. So the audible and visible event in the video is <event> Male speech, man speaking </event>, and the time range is <range> 0,8 </range>.
 
 
+<div align="center"><video src="https://private-user-images.githubusercontent.com/72310120/422185838-473fed2a-b092-450b-a50e-13e3bc471772.mp4?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDE4NDI1NDUsIm5iZiI6MTc0MTg0MjI0NSwicGF0aCI6Ii83MjMxMDEyMC80MjIxODU4MzgtNDczZmVkMmEtYjA5Mi00NTBiLWE1MGUtMTNlM2JjNDcxNzcyLm1wND9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAzMTMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMzEzVDA1MDQwNVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTAyYmY3NzExMjA1MzViOWI1MDAwNDQ5NDBiN2QyNDU5NjNkNzVkZTA3OGQ3NTllZWQ0NjljMmE2NDU4MWVkYjUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.KSgw-89gTiXRINLdIgSm3fxhzlbXzXZWqSWwMKSlA5Q" width="800"></div>
+
+Label: 
+Audio: Chainsaw, [0,10]  Visual: Chainsaw, [0,1],[3,6],[9,10]
+
+Predict: The video shows a man using a chainsaw to cut a tree. The chainsaw is visible and running from the beginning of the video (0 seconds) to the end (10 seconds). Therefore, visual and audio events are: <visual>Chainsaw,(0 10)</visual> and <audio>Chainsaw,(0 10)</audio>
+
+
 
 ### Spatial Localization
 
