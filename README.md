@@ -3,7 +3,7 @@
 <p>
 
 <h3 align="center"><a href="https://arxiv.org/abs/2406.07476" style="color:#9C276A">
-Crab: A Unified Audio-Visual Scene Understanding Model with Explicit Cooperation</a>(CVPR'25)</h3>
+Crab: A Unified Audio-Visual Scene Understanding Model with Explicit Cooperation</a> (CVPR'25)</h3>
 <h5 align="center"> If our project helps you, please give us a star ⭐ on GitHub to support us. 🙏🙏 </h2>
 
 <h5 align="center">
