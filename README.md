@@ -6,6 +6,7 @@
 Crab: A Unified Audio-Visual Scene Understanding Model with Explicit Cooperation</a> (CVPR'25)</h3>
 <h5 align="center"> If our project helps you, please give us a star ⭐ on GitHub to support us. 🙏🙏 </h2>
 
+
 <h5 align="center">
 
 
@@ -14,6 +15,8 @@ Crab: A Unified Audio-Visual Scene Understanding Model with Explicit Cooperation
 <img src="assets/teaser.png" width="800" />
 
 🚀🚀 Welcome to the repo of **SALMONN**!
+
+
 Crab is a unified audio-visual scene understanding model with explicit cooperation, which can complete various audio-visual tasks. It is trained on an instruction-tuning dataset with explicit reasoning process, which clarifies the cooperative relationship among tasks. Furthermore, to alleviate the interference caused by the learning process of complex audiovisual data and facilitate concrete cooperation, an interaction-aware LoRA structure is designed to enable the model focus on different aspects of data interaction.
 
 
