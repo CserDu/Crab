@@ -68,6 +68,13 @@ Predict: The video shows a man using a chainsaw to cut a tree. The chainsaw is v
 
 ### Spatio-temporal reasoning
 
+<div align="center"><video src="https://private-user-images.githubusercontent.com/72310120/422186495-bbc445fd-fc97-4db1-88f9-6244c230dbde.mp4?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDE4NDI3MjAsIm5iZiI6MTc0MTg0MjQyMCwicGF0aCI6Ii83MjMxMDEyMC80MjIxODY0OTUtYmJjNDQ1ZmQtZmM5Ny00ZGIxLTg4ZjktNjI0NGMyMzBkYmRlLm1wND9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAzMTMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMzEzVDA1MDcwMFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWU3MmE2NzJkYjdiM2FjZWYyMjk5NjhlNDFlZWJlMjA1NTg3YmEzMTY0NjM2NmM5OTk2ZmM5NmE3ODVhOWU0ZWYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.p5QQb07__JvCNHTVwGJgymlZTYMOLuAewRjaqJ00GEI"></div>
+
+Question: What is the left instrument of the first sounding instrument? 
+
+Answer: saxophone
+
+Pred: In the video, four men are playing musical instruments. The man on the left is playing the saxophone, the man in the middle is playing the double bass, the man on the right is playing the guitar, and the man in the back is playing the drums. At the beginning of the video, the man in the middle starts playing the double bass first, and then the other instruments start playing. So the instrument on the left of the first sounding instrument is the saxophone. So the answer is <answer> saxophone </answer>.
 
 
 ### Pixel-level understanding
