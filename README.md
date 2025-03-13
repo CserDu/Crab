@@ -62,7 +62,7 @@ Predict: The video shows a man using a chainsaw to cut a tree. The chainsaw is v
 
 ### Spatial Localization
 <h4 align="center"> ARIG Task </h4>
-<img align="center" src="assets/arig.jpg" />
+<div align="center"><img src="assets/arig.jpg"> </div>
 
 
 
