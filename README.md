@@ -59,13 +59,6 @@ Audio: Chainsaw, [0,10]  Visual: Chainsaw, [0,1],[3,6],[9,10]
 Predict: The video shows a man using a chainsaw to cut a tree. The chainsaw is visible and running from the beginning of the video (0 seconds) to the end (10 seconds). Therefore, visual and audio events are: <visual>Chainsaw,(0 10)</visual> and <audio>Chainsaw,(0 10)</audio>
 
 
-
-### Spatial Localization
-<h4 align="center"> ARIG Task </h4>
-<div align="center"><img src="assets/arig.jpg"> </div>
-
-
-
 ### Spatio-temporal reasoning
 
 <h4 align="center"> MUSIC-AVQA Task </h4>
@@ -77,7 +70,8 @@ Answer: saxophone
 Pred: In the video, four men are playing musical instruments. The man on the left is playing the saxophone, the man in the middle is playing the double bass, the man on the right is playing the guitar, and the man in the back is playing the drums. At the beginning of the video, the man in the middle starts playing the double bass first, and then the other instruments start playing. So the instrument on the left of the first sounding instrument is the saxophone. So the answer is <answer> saxophone </answer>.
 
 
-### Pixel-level understanding
+### Spatial Localization & Pixel-level understanding
+<div align="center"><img src="assets/arig+avs.png"> </div>
 
 
 ## 🚀 Quick Start
