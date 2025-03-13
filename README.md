@@ -29,7 +29,8 @@ pip install -r requirements.txt
 
 
 ## 🚀 Quick Start
-1. Download [finetune weights](https://huggingface.co/ahsgdxhs/Crab)
+1. download [LLaMA-2-Chat-HF](https://huggingface.co/meta-llama/Llama-2-7b-chat-hf) checkpoint in directory $pretrain_model_name_or_path$;
+1. Download [finetune weights](https://huggingface.co/ahsgdxhs/Crab) in director $ckpt_dir$;
 2. Command:
 ```python
 compute_dtype = torch.float32
