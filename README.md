@@ -7,7 +7,7 @@
 Crab: A Unified Audio-Visual Scene Understanding Model with Explicit Cooperation</a> (CVPR'25)</h3>
 
 
-<h5 align="center"> 🚀🚀 Welcome to the repo of **Crab**! If our project helps you, please give us a star ⭐ on GitHub to support us. 🙏🙏 </h2>
+<h5 align="center"> 🚀🚀 Welcome to the repo of Crab! If our project helps you, please give us a star ⭐ on GitHub to support us. 🙏🙏 </h2>
 
 <h5 align="center">
 
