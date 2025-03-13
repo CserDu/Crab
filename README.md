@@ -19,7 +19,7 @@ Crab: A Unified Audio-Visual Scene Understanding Model
 
 
 
-## 🚀 Unified Audio-Visual Scene Understanding Capabilities
+## 🌟 Unified Audio-Visual Scene Understanding Capabilities
 
 ### Temporal Localization
 <h4 align="center">  AVE Task </h4>
