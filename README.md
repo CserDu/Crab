@@ -76,102 +76,60 @@ LLM Weights:
 
 ## 🚀 Quick Start
 1. Download [finetune weights](https://huggingface.co/ahsgdxhs/Crab) in directory `ckpt_dir`;
-2. Command:
+2. Prepare test samples like this:
+```json
+[
+    {
+        "task": "avqa",
+        "audio_path": "/group/40061/cserdu/data/music-avqa/audio_data/00006835.mp3",
+        "video_path": "/group/40061/cserdu/data/music-avqa/video_data/00006835.mp4",
+        "question": "What is the left instrument of the first sounding instrument?"
+    },
+    {
+        "task": "ave",
+        "audio_path": "/group/40061/cserdu/data/ave/AVE_Dataset/audio_data/-67UNKFmRLk.mp3",
+        "video_path": "/group/40061/cserdu/data/ave/AVE_Dataset/AVE/-67UNKFmRLk.mp4"
+    },
+    {
+        "task": "avvp",
+        "audio_path": "/group/40061/cserdu/data/avvp/audio_data/6aV6c8mY0lg.mp3",
+        "video_path": "/group/40061/cserdu/data/avvp/llp_videos/6aV6c8mY0lg.mp4"
+    },
+    {
+        "task": "arig",
+        "audio_path": "/group/40061/cserdu/data/AVS/v1s/HxMoMMrA6Eo_0_5000/audio.wav",
+        "image_path": "/group/40061/cserdu/data/AVS/v1s/HxMoMMrA6Eo_0_5000/frames/1.jpg"
+    },
+    {
+        "task": "s4",
+        "audio_path": "/group/40061/cserdu/data/AVS/v1s/_4R3qHn1n50_0_5000/audio.wav",
+        "image_path": "/group/40061/cserdu/data/AVS/v1s/_4R3qHn1n50_0_5000/frames/0.jpg",
+        "mask_path": "/group/40061/cserdu/data/AVS/v1s/_4R3qHn1n50_0_5000/labels_semantic/0.png"
+    },
+    {
+        "task": "ms3",
+        "audio_path": "/group/40061/cserdu/data/AVS/v1m/3vheOi4y540_1/audio.wav",
+        "image_path": "/group/40061/cserdu/data/AVS/v1m/3vheOi4y540_1/frames/1.jpg",
+        "mask_path": "/group/40061/cserdu/data/AVS/v1m/3vheOi4y540_1/labels_semantic/1.png"
+    },
+    {
+        "task": "ref-avs",
+        "audio_path": "/group/40061/cserdu/data/ref-avs/REFAVS/media/-8mcyL3kWNQ_8000_18000/audio.wav",
+        "image_path": "/group/40061/cserdu/data/ref-avs/REFAVS/media/-8mcyL3kWNQ_8000_18000/frames/7.jpg",
+        "mask_path": "/group/40061/cserdu/data/ref-avs/REFAVS/gt_mask/-8mcyL3kWNQ_8000_18000/fid_11/00007.png",
+        "exp": "making the loudest sound"
+    },
+    {
+        "task":"avss",
+        "audio_path":"/group/40061/cserdu/data/AVS/v2/_aldtLqTVYI_1000_11000/audio.wav",
+        "image_path":"/group/40061/cserdu/data/AVS/v2/_aldtLqTVYI_1000_11000/frames/0.jpg",
+        "mask_path":"/group/40061/cserdu/data/AVS/v2/_aldtLqTVYI_1000_11000/labels_rgb/0.png"
+    }
+]
+```
+3. Infer. For example, for music-avqa task, set `avqa_task = True` in `scripts/quick_start.sh`, then run:
 ```python
-compute_dtype = torch.float32
-pretrain_model_name_or_path = '/dockerdata/Llama-2-7b-chat-hf'
-from models.unified_llama import UnifiedForCausalLM
-from transformers import LlamaConfig
-config = LlamaConfig.from_pretrained(pretrain_model_name_or_path, local_files_only=True)
-model = UnifiedForCausalLM.from_pretrained(
-    pretrain_model_name_or_path,
-    config=config,
-    torch_dtype=compute_dtype
-)
-model.config.use_cache = True
-from peft_hyper import LoraConfig,get_peft_model
-lora_trainable="q_proj,k_proj,v_proj,o_proj,gate_proj,down_proj,up_proj"
-target_modules = lora_trainable.split(',')
-lora_rank = 8
-lora_alpha = 16
-lora_dropout = 0.05
-lora_nums = 3
-modules_to_save = None
-peft_config = LoraConfig(
-    task_type = "CAUSAL_LM",
-    target_modules = target_modules,
-    inference_mode = False,
-    r = lora_rank, 
-    lora_alpha = lora_alpha,
-    lora_dropout = lora_dropout,
-    lora_nums = lora_nums,
-    # modules_to_save=modules_to_save
-)
-model = get_peft_model(model, peft_config)
-
-from transformers import LlamaTokenizer
-tokenizer = LlamaTokenizer.from_pretrained(
-    pretrain_model_name_or_path,
-    padding_side="left",
-    use_fast=True,
-)
-if tokenizer.pad_token_id is None:
-    tokenizer.pad_token_id = tokenizer.eos_token_id
-
-ori_tokenizer_vocab_nums = len(tokenizer)
-model.get_model().pad_token_id = tokenizer.pad_token_id
-model.get_model().init_multimodal_modules()
-
-image_scale_nums = 2
-token_nums_per_scale = 3
-model.initialize_MM_tokenizer(tokenizer,mask_token_nums = image_scale_nums * token_nums_per_scale, use_vqgan=False)
-MM_tokenizer_vocab_nums = len(tokenizer)
-print('ori_tokenizer_vocab_nums: ',ori_tokenizer_vocab_nums, ' MM_tokenizer_vocab_nums: ',MM_tokenizer_vocab_nums)
-
-
-ckpt_dir = infer_args.ckpt_dir
-ckpt_path = join(ckpt_dir,'finetune_weights.bin')
-ckpt = torch.load(ckpt_path,map_location='cpu')
-model.load_state_dict(ckpt,strict=False)
-print(f'load ckpt from {ckpt_path} finished...')
-
-device = infer_args.device
-torch.cuda.set_device(device)
-model.cuda()
-model.eval()
-
-## infer ref-avs
-# audio_path = '/group/40061/cserdu/data/music-avqa/audio_data/00000078.mp3'
-# image_path = 'test.png'
-# exp = 'the sounding object on the left.'
-# image_processor = model.get_model().visual_encoder.image_processor
-# inference_ref_avs(model,audio_path,image_path,image_processor,tokenizer,exp)
-
-## infer avss
-# audio_path = '/group/40061/cserdu/data/music-avqa/audio_data/00000078.mp3'
-# image_path = 'test.png'
-# idx = 4
-# image_processor = model.get_model().visual_encoder.image_processor
-# inference_avss(model,audio_path,idx,image_path,image_processor,tokenizer)
-
-## infer avqa
-audio_path = '/group/40061/cserdu/data/music-avqa/audio_data/00001227.mp3'
-video_path = '/group/40061/cserdu/data/music-avqa/video_data/00001227.mp4'
-question = 'What is the left instrument of the first sounding instrument?'
-image_processor = model.get_model().visual_encoder.image_processor
-inference_avqa(model,audio_path,video_path,image_processor,tokenizer,question)
-
-## infer ave
-# audio_path = '/group/40061/cserdu/data/ave/AVE_Dataset/audio_data/Hhqvvc4qu2Y.mp3'
-# video_path = '/group/40061/cserdu/data/ave/AVE_Dataset/AVE/Hhqvvc4qu2Y.mp4'
-# image_processor = model.get_model().visual_encoder.image_processor
-# inference_ave(model,audio_path,video_path,image_processor,tokenizer)
-
-## infer avcap
-# audio_path = '/group/40061/cserdu/data/ave/AVE_Dataset/audio_data/Hhqvvc4qu2Y.mp3'
-# video_path = '/group/40061/cserdu/data/ave/AVE_Dataset/AVE/Hhqvvc4qu2Y.mp4'
-# image_processor = model.get_model().visual_encoder.image_processor
-# inference_avcap(model,audio_path,video_path,image_processor,tokenizer)
+bash scripts/quick_start.sh
 ``` 
 
 
