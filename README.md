@@ -133,6 +133,7 @@ For music-avqa task, set `avqa_task = True` and `ckpt_dir = <your ckpt_dir>` in 
 bash scripts/quick_start.sh
 ``` 
 For `S4, MS3 and Ref-AVS` tasks, set `s4_task = True` and `avs_ckpt_dir = <your avs_ckpt_dir>` in `scripts/quick_start.sh`.
+
 For `AVSS` task, set `avss_task = True` and `avs_ckpt_dir = <your avss_ckpt_dir>` in `scripts/quick_start.sh`.
 
 ## 🗝️ Training
