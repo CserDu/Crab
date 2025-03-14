@@ -75,8 +75,8 @@ LLM Weights:
 
 
 ## 🚀 Quick Start
-1. Download [finetune weights](https://huggingface.co/ahsgdxhs/Crab) in directory `ckpt_dir`;
-2. Prepare test samples like this:
+1. Download [finetune weights](https://huggingface.co/ahsgdxhs/Crab) in directory `ckpt_dir`, [avs_finetune_weights](https://huggingface.co/ahsgdxhs/Crab/blob/main/avs_finetune_weights.bin)  and [avss_finetune_weights] in directory `avs_ckpt_dir`;
+2. Prepare your test samples like this:
 ```json
 [
     {
@@ -127,11 +127,13 @@ LLM Weights:
     }
 ]
 ```
-3. Infer. For example, for music-avqa task, set `avqa_task = True` in `scripts/quick_start.sh`, then run:
+3. Infer.
+For music-avqa task, set `avqa_task = True` and `ckpt_dir = <your ckpt_dir>` in `scripts/quick_start.sh`, then run:
 ```python
 bash scripts/quick_start.sh
 ``` 
-
+For `S4, MS3 and Ref-AVS` tasks, set `s4_task = True` and `avs_ckpt_dir = <your avs_ckpt_dir>` in `scripts/quick_start.sh`.
+For `AVSS` task, set `avss_task = True` and `avs_ckpt_dir = <your avss_ckpt_dir>` in `scripts/quick_start.sh`.
 
 ## 🗝️ Training
 1. Download [audio pretrain checkpoint](https://huggingface.co/ahsgdxhs/Crab/blob/main/audio_pretrain.bin), [visual pretrain checkpoint](https://huggingface.co/ahsgdxhs/Crab/blob/main/visual_pretrain.bin), [segmentation pretrain checkpoint](https://huggingface.co/ahsgdxhs/Crab/blob/main/segmentation_pretrain.bin) in `prtrain_ckpt_dir`
