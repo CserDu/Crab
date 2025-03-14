@@ -3,7 +3,7 @@
 <p>
 
 
-<h3 align="center"> (CVPR'25) <a href="https://arxiv.org/abs/2406.07476" style="color:#9C276A">
+<h3 align="center"> (CVPR'25) <a href="" style="color:#9C276A">
 Crab: A Unified Audio-Visual Scene Understanding Model 
     with Explicit Cooperation</a></h3>
 
@@ -13,7 +13,7 @@ Crab: A Unified Audio-Visual Scene Understanding Model
 <h5 align="center">
 
 
-[![hf_checkpoint](https://img.shields.io/badge/🤗-Checkpoints-9C276A.svg)](https://huggingface.co/ahsgdxhs/Crab) [![hf_data](https://img.shields.io/badge/🤗-MSVC-9C276A.svg)](https://huggingface.co/datasets/ahsgdxhs/AVUIE) [![arXiv](https://img.shields.io/badge/Arxiv-2406.07476-AD1C18.svg?logo=arXiv)](https://arxiv.org/abs/2406.07476) <br>
+[![hf_checkpoint](https://img.shields.io/badge/🤗-Checkpoints-9C276A.svg)](https://huggingface.co/ahsgdxhs/Crab) [![hf_data](https://img.shields.io/badge/🤗-MSVC-9C276A.svg)](https://huggingface.co/datasets/ahsgdxhs/AVUIE) [![arXiv](https://img.shields.io/badge/Arxiv-2406.07476-AD1C18.svg?logo=arXiv)]() <br>
 
 <img src="assets/teaser.png" width="800" />
 
