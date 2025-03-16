@@ -8,6 +8,7 @@ RANK=0
 
 llama2_ckpt_path=/group/40061/cserdu/pretrain/Llama-2-7b-chat-hf
 qwen2_ckpt_path=/group/40061/cserdu/pretrain/Qwen2-7B-Instruct
+dockerdata_llama2_ckpt_path=/dockerdata/Llama-2-7b-chat-hf
 
 # Training Arguments
 LOCAL_BATCH_SIZE=8
@@ -27,9 +28,11 @@ export ASCEND_LAUNCH_BLOCKING='1'
 
 python scripts/finetune/inference_hyper_lora.py \
     --llm_name llama \
-    --model_name_or_path $llama2_ckpt_path \
+    --model_name_or_path $dockerdata_llama2_ckpt_path \
     --freeze_backbone True \
     --lora_enable True \
+    --use_hyper_lora True \
+    --use_process True \
     --bits 32 \
     --lora_r 8 \
     --lora_alpha 16 \
@@ -37,18 +40,18 @@ python scripts/finetune/inference_hyper_lora.py \
     --bf16 False \
     --tf32 False \
     --fp16 False \
-    --ckpt_dir results/finetune/050-hyper_lora-arig_only/checkpoint-60 \
+    --ckpt_dir results/finetune/057-joint_all/checkpoint-819 \
     --avqa_task False \
     --ave_task False \
     --avvp_task False \
-    --arig_task True \
+    --arig_task False \
     --avcap_task False \
     --ms3_task False \
-    --s4_task False \
+    --s4_task True \
     --avss_task False \
     --ref_avs_task False \
-    --adapter_ckpt_path results/finetune/035-hyper_lora-joint_all-arig_1_frame-avs_1_frame/checkpoint-3275/adapter_weights.bin \
-    --test_name test_u \
+    --avs_ckpt_dir results/finetune/058-finetune-ms3-s4-ref_avs/checkpoint-15417 \
+    --test_name test_n \
     --device cuda:0 \
     --multi_frames False \
     --visual_branch True \
@@ -61,13 +64,13 @@ python scripts/finetune/inference_hyper_lora.py \
     --audio_branch True \
     --BEATs_ckpt_path /group/40061/cserdu/pretrain/beats/BEATs_iter3_plus_AS2M_finetuned_on_AS2M_cpt2.pt \
     --audio_query_token_nums 32 \
-    --seg_branch False \
+    --seg_branch True \
     --prompt_embed_dim 256 \
     --mask_decoder_transformer_depth 2 \
-    --low_res_mask_size 128 \
+    --low_res_mask_size 112 \
     --image_scale_nums 2 \
     --token_nums_per_scale 3 \
-    --avs_query_num 128 \
+    --avs_query_num 300 \
     --num_classes 1 \
     --query_generator_num_layers 2 \
     --output_dir 'test'
