@@ -43,6 +43,7 @@ Predict: The video shows a man using a chainsaw to cut a tree. The chainsaw is v
 Question: What is the left instrument of the first sounding instrument? 
 
 Answer: saxophone
+
 Pred: In the video, four men are playing musical instruments. The man on the left is playing the saxophone, the man in the middle is playing the double bass, the man on the right is playing the guitar, and the man in the back is playing the drums. At the beginning of the video, the man in the middle starts playing the double bass first, and then the other instruments start playing. So the instrument on the left of the first sounding instrument is the saxophone. So the answer is <answer> saxophone </answer>.
 
 
@@ -131,7 +132,7 @@ LLM Weights:
 ```python
 bash scripts/quick_start.sh
 ``` 
-- For S4, MS3 and Ref-AVS tasks, set `s4_task = True` and `avs_ckpt_dir = <your avs_ckpt_dir>`.
+- For S4, MS3 and Ref-AVS tasks, set `<your task> = True` and `avs_ckpt_dir = <your avs_ckpt_dir>`.
 
 - For AVSS task, set `avss_task = True` and `avs_ckpt_dir = <your avss_ckpt_dir>`.
 
