@@ -110,6 +110,7 @@ class TrainingArguments(transformers.TrainingArguments):
     seg_branch: bool = field(default=False)
 
     pretrain_ckpt_dir: str = field(default='')
+    finetune_ckpt_dir: str = field(default='')
 
     save_modules: str = field(default='vl_projector,al_projector,lora')
 
