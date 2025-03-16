@@ -153,15 +153,10 @@ bash scripts/finetune/finetune_hyper_lora_avs.sh
 
 
 ## 🤖 Inference
-inference AVE, AVVP, ARIG, AVQA
 ```bash
 bash scripts/finetune/inference_hyper_lora.sh
 ```
 
-infernce AVS:
-```bash
-bash scripts/finetune/inference_hyperlora_avs.sh
-```
 
 
 ## 📑 Citation
