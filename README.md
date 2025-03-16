@@ -145,6 +145,7 @@ bash scripts/quick_start.sh
 bash scripts/finetune/finetun_hyper_lora.sh
 ```
 4. Jointly training AVS
+set `finetune_ckpt_dir = <your finetune ckpt dir>` in step 3, then run:
 ```bash
 bash scripts/finetune/finetune_hyper_lora_avs.sh
 ``` 
