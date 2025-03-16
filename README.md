@@ -43,7 +43,6 @@ Predict: The video shows a man using a chainsaw to cut a tree. The chainsaw is v
 Question: What is the left instrument of the first sounding instrument? 
 
 Answer: saxophone
-
 Pred: In the video, four men are playing musical instruments. The man on the left is playing the saxophone, the man in the middle is playing the double bass, the man on the right is playing the guitar, and the man in the back is playing the drums. At the beginning of the video, the man in the middle starts playing the double bass first, and then the other instruments start playing. So the instrument on the left of the first sounding instrument is the saxophone. So the answer is <answer> saxophone </answer>.
 
 
@@ -128,16 +127,17 @@ LLM Weights:
 ]
 ```
 3. Infer.
-For music-avqa task, set `avqa_task = True` and `ckpt_dir = <your ckpt_dir>` in `scripts/quick_start.sh`, then run:
+- For MUSIC-AVQA task, set `avqa_task = True` and `ckpt_dir = <your ckpt_dir>` in `scripts/quick_start.sh`, then run:
 ```python
 bash scripts/quick_start.sh
 ``` 
-For `S4, MS3 and Ref-AVS` tasks, set `s4_task = True` and `avs_ckpt_dir = <your avs_ckpt_dir>` in `scripts/quick_start.sh`.
+- For S4, MS3 and Ref-AVS tasks, set `s4_task = True` and `avs_ckpt_dir = <your avs_ckpt_dir>`.
 
-For `AVSS` task, set `avss_task = True` and `avs_ckpt_dir = <your avss_ckpt_dir>` in `scripts/quick_start.sh`.
+- For AVSS task, set `avss_task = True` and `avs_ckpt_dir = <your avss_ckpt_dir>`.
+
 
 ## 🗝️ Training
-1. Download [audio pretrain checkpoint](https://huggingface.co/ahsgdxhs/Crab/blob/main/audio_pretrain.bin), [visual pretrain checkpoint](https://huggingface.co/ahsgdxhs/Crab/blob/main/visual_pretrain.bin), [segmentation pretrain checkpoint](https://huggingface.co/ahsgdxhs/Crab/blob/main/segmentation_pretrain.bin) in `prtrain_ckpt_dir`
+1. Download [audio pretrain checkpoint](https://huggingface.co/ahsgdxhs/Crab/blob/main/audio_pretrain.bin), [visual pretrain checkpoint](https://huggingface.co/ahsgdxhs/Crab/blob/main/visual_pretrain.bin), [segmentation pretrain checkpoint](https://huggingface.co/ahsgdxhs/Crab/blob/main/segmentation_pretrain.bin) in `prtrain_ckpt_dir`;
 2. Download [AVUIE dataset annotations](https://huggingface.co/datasets/ahsgdxhs/AVUIE) and raw data from [AVE](https://github.com/YapengTian/AVE-ECCV18), [AVVP](https://github.com/YapengTian/AVVP-ECCV20), [AVS](https://github.com/OpenNLPLab/AVSBench), [Ref-AVS](https://github.com/GeWu-Lab/Ref-AVS), [MUSIC-AVQA](https://github.com/GeWu-Lab/MUSIC-AVQA), [VALOR](https://github.com/TXH-mercury/VALOR)
 3. Jointly training all tasks:
 ```bash
